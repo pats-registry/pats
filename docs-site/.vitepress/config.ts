@@ -40,7 +40,7 @@ export default defineConfig({
     ],
     footer: {
       message: 'Built in the open for the Kirn ecosystem.',
-      copyright: 'MIT licensed · <a href="https://kirn-lang.github.io/">Kirn</a> · <a href="https://kirnly.github.io/">Kirnly</a> · <a href="https://kirnos-kernel.github.io/">KirnOS</a> · <a href="https://rkriad585.github.io/">Creator</a>'
+      copyright: 'MIT licensed · <a href="https://kirn-lang.github.io/">Kirn website</a> · <a href="https://pets-registry.github.io/">Pets registry</a> · <a href="https://kirnly.github.io/">Kirnly</a> · <a href="https://kirnos-kernel.github.io/">KirnOS</a> · <a href="https://rkriad585.github.io/">Creator</a> · <a href="https://rkriad585.github.io/kirn/">Kirn docs</a> · <a href="https://pets-registry.github.io/pets">Pets docs</a>'
     },
     editLink: {
       pattern: 'https://github.com/pets-registry/pets/edit/main/docs-site/:path',

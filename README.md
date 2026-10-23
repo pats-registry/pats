@@ -1,37 +1,58 @@
-﻿# Pets Registry — the `pets` org index
+<p align="center">
+  <img src="https://pets-registry.github.io/pats-logos/pats-1280x640.png" alt="Pets Registry logo" width="520">
+</p>
 
-This org is the **pets registry** for the [Kirn language](https://github.com/rkriad585/kirn).
-It does **not** hold any pets itself, and it does **not** run any build workflow. It is
-only the **name → repo index** so that `kirn i <name>` can resolve a short registry name.
+<h1 align="center">Pets Registry</h1>
 
-## How it actually works (the flow)
+<p align="center">The index and contribution hub for reusable packages in the Kirn ecosystem.</p>
 
-1. A **pet developer** runs, in their own repo:
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT">
+  <img src="https://img.shields.io/badge/made%20by-rkriad585-111827.svg" alt="Made by rkriad585">
+</p>
 
-     `kirn new pets <petname>`
+## Overview
 
-   That scaffolds the **default hello-world pets template** and **auto-initializes the
-   Auto Build & Release workflow** — in *the developer's repo*, on their own GitHub repo:
-   `.github/workflows/kirn-pets-release.yml`. Nothing is added to this registry by that
-   action.
+The Pets repository is the source-backed registry index for Kirn package discovery. Pet source code and release workflows live in each developer’s own repository; this repository provides the registry metadata, contribution rules, and publishing guidance.
 
-2. The developer **pushes the pet to their GitHub account** and tags it (`v*`). Their
-   repo's own tag-triggered *Auto Build & Release* workflow then `kirn build pets`'s and
-   publishes a tagged release artifact.
+## Website and source
 
-3. Anyone else installs it:
+- [Project website](https://pets-registry.github.io/pets/)
+- [Source repository](https://github.com/pets-registry/pets)
+- [Creator: RK Riad Khan](https://rkriad585.github.io/)
 
-   - `kirn i <name>`                 — registered name → resolved against this index
-   - `kirn i <user>/<repo>`          — full owner/repo form
-   - `kirn i [https://]<git-host>/<user>/<repo>` — third-party git host (gitlab/codeberg)
+## Kirn ecosystem
 
-## What lives here (nothing else)
+- [Creator website](https://rkriad585.github.io/)
+- [KirnOS website](https://kirnos-kernel.github.io/)
+- [Kirnly website](https://kirnly.github.io/)
+- [Pets registry website](https://pets-registry.github.io/)
+- [Kirn website](https://kirn-lang.github.io/)
+- [Kirn documentation](https://rkriad585.github.io/kirn/)
+- [Pets contribution docs](https://pets-registry.github.io/pets)
 
-- `registry.toml` — the index `kirn i <name>` resolves against. **Empty**: per §13.1
-  there are no built-in pets. A pet becomes a *registered name* only when its repo joins
-  this org as a tagged release.
-- `README.md` — this landing (mirrors the `pets-registry.github.io` pages site).
-- `LICENSE.txt` — MIT (2026 Kirn).
+## Local development
 
-The **workflow template that `kirn new pets` auto-initializes** lives in `src/tools/…`
-template scaffolding in the main repo (the ding pet template), not here.
+This repository contains a static website or documentation site. Follow the repository-specific instructions below.
+
+~~~bash
+cd docs-site
+npm install
+npm run docs:dev
+~~~
+
+For VitePress repositories, open the local URL shown by the development server. For static websites, open <http://localhost:8000/>.
+
+## Repository contents
+
+- `README.md` — project overview and ecosystem links
+- `LICENSE` or `LICENSE.txt` — open-source license
+- `CONTRIBUTING.md` — contribution workflow
+- `SECURITY.md` — private vulnerability-reporting guidance
+- `CODE_OF_CONDUCT.md` — community expectations
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), and [ACCESSIBILITY.md](ACCESSIBILITY.md) before opening a pull request. Report security issues privately using [SECURITY.md](SECURITY.md).
+
+## License

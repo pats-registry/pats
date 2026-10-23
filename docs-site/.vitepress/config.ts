@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   title: 'Pets Registry Docs',
   description: 'End-to-end instructions for creating, releasing, and proposing Kirn Pets.',
   lang: 'en-US',
@@ -56,4 +57,4 @@ export default defineConfig({
     ['meta', { property: 'og:image', content: 'https://pets-registry.github.io/pats-logos/pats-1280x640.png' }],
     ['link', { rel: 'icon', href: 'https://pets-registry.github.io/pats-logos/pats_icon-on-light.png' }]
   ]
-})
+}))

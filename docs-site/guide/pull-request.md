@@ -1,18 +1,18 @@
 ---
 title: Open the pull request
-description: Submit a clear pull request from your fork to the official Pets registry.
+description: Submit a clear pull request from your fork to the official Pats registry.
 ---
 
 # Open the pull request
 
-Use a pull request when you are proposing a change to `pets-registry/pets`.
+Use a pull request when you are proposing a change to `pats-registry/pats`.
 
 ## 1. Open GitHub
 
 Visit your pushed branch:
 
 ```text
-https://github.com/YOUR-USERNAME/pets/tree/add-my-pet
+https://github.com/YOUR-USERNAME/pats/tree/add-my-pat
 ```
 
 GitHub normally shows a **Compare & pull request** button. Select it, or open the **Pull requests** tab and choose **New pull request**.
@@ -21,10 +21,10 @@ GitHub normally shows a **Compare & pull request** button. Select it, or open th
 
 Set the comparison to:
 
-- Base repository: `pets-registry/pets`
+- Base repository: `pats-registry/pats`
 - Base branch: `main`
-- Head repository: `YOUR-USERNAME/pets`
-- Compare branch: `add-my-pet`
+- Head repository: `YOUR-USERNAME/pats`
+- Compare branch: `add-my-pat`
 
 ## 3. Write a useful description
 
@@ -33,22 +33,22 @@ Include:
 - What changed.
 - Why the change belongs in the registry repository.
 - How you tested it.
-- A link to the Pet repository and tagged release, if you are publishing a Pet.
+- A link to the Pat repository and tagged release, if you are publishing a Pat.
 - Any maintainer action still needed.
 
 Example:
 
 ```text
 ## Summary
-Adds documentation for the my-pet publishing workflow.
+Adds documentation for the my-pat publishing workflow.
 
 ## Verification
 - kirn test
-- kirn build pets
-- Reviewed .github/workflows/kirn-pets-release.yml
+- kirn build pats
+- Reviewed .github/workflows/kirn-pats-release.yml
 
-## Pet repository
-https://github.com/YOUR-USERNAME/my-pet
+## Pat repository
+https://github.com/YOUR-USERNAME/my-pat
 ```
 
 ## 4. Submit and respond

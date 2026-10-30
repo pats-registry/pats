@@ -13,12 +13,12 @@
 
 ## Overview
 
-The Pets repository is the source-backed registry index for Kirn package discovery. Pet source code and release workflows live in each developer’s own repository; this repository provides the registry metadata, contribution rules, and publishing guidance.
+The Pats repository is the source-backed registry index for Kirn package discovery. Pat source code and release workflows live in each developer’s own repository; this repository provides the registry metadata, contribution rules, and publishing guidance.
 
 ## Website and source
 
-- [Project website](https://pets-registry.github.io/pets/)
-- [Source repository](https://github.com/pets-registry/pets)
+- [Project website](https://pats-registry.github.io/pats/)
+- [Source repository](https://github.com/pats-registry/pats)
 - [Creator: RK Riad Khan](https://rkriad585.github.io/)
 
 ## Kirn ecosystem
@@ -26,10 +26,10 @@ The Pets repository is the source-backed registry index for Kirn package discove
 - [Creator website](https://rkriad585.github.io/)
 - [KirnOS website](https://kirnos-kernel.github.io/)
 - [Kirnly website](https://kirnly.github.io/)
-- [Pets registry website](https://pets-registry.github.io/)
+- [Pats registry website](https://pats-registry.github.io/)
 - [Kirn website](https://kirn-lang.github.io/)
 - [Kirn documentation](https://rkriad585.github.io/kirn/)
-- [Pets contribution docs](https://pets-registry.github.io/pets)
+- [Pats contribution docs](https://pats-registry.github.io/pats)
 
 ## Local development
 

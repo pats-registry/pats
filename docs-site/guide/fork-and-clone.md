@@ -1,6 +1,6 @@
 ---
 title: Fork and clone
-description: Fork the Pets registry, clone your fork, and configure upstream.
+description: Fork the Pats registry, clone your fork, and configure upstream.
 ---
 
 # Fork and clone
@@ -9,12 +9,12 @@ This is the repeatable starting point for a pull request to the registry reposit
 
 ## 1. Fork on GitHub
 
-Open the [Pets registry repository](https://github.com/pets-registry/pets), select **Fork**, keep your account as the owner, and create the fork.
+Open the [Pats registry repository](https://github.com/pats-registry/pats), select **Fork**, keep your account as the owner, and create the fork.
 
 Your fork will look like:
 
 ```text
-https://github.com/YOUR-USERNAME/pets
+https://github.com/YOUR-USERNAME/pats
 ```
 
 Replace `YOUR-USERNAME` in the commands below with your GitHub username.
@@ -22,21 +22,21 @@ Replace `YOUR-USERNAME` in the commands below with your GitHub username.
 ## 2. Clone your fork
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/pets.git
-cd pets
+git clone https://github.com/YOUR-USERNAME/pats.git
+cd pats
 ```
 
 ## 3. Add the official repository as upstream
 
 ```bash
-git remote add upstream https://github.com/pets-registry/pets.git
+git remote add upstream https://github.com/pats-registry/pats.git
 git remote -v
 ```
 
 You should see:
 
 - `origin` pointing to your fork.
-- `upstream` pointing to `pets-registry/pets`.
+- `upstream` pointing to `pats-registry/pats`.
 
 ## 4. Start from current main
 

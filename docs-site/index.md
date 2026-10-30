@@ -1,12 +1,12 @@
 ---
 layout: home
-title: Pets Registry Docs
-titleTemplate: Publish a Kirn Pet
-description: End-to-end instructions for creating, releasing, and proposing Kirn Pets.
+title: Pats Registry Docs
+titleTemplate: Publish a Kirn Pat
+description: End-to-end instructions for creating, releasing, and proposing Kirn Pats.
 hero:
-  name: Pets
+  name: Pats
   text: ship useful building blocks
-  tagline: Create a Pet, release it from your own repository, and help the Kirn ecosystem discover it.
+  tagline: Create a Pat, release it from your own repository, and help the Kirn ecosystem discover it.
   actions:
     - theme: brand
       text: Start the guide
@@ -17,12 +17,12 @@ hero:
 features:
   - icon: ①
     title: Create in your repo
-    details: Use Kirn's Pet scaffold so your source, metadata, tests, and release workflow stay together.
-    link: /guide/create-pet
-    linkText: Create a Pet
+    details: Use Kirn's Pat scaffold so your source, metadata, tests, and release workflow stay together.
+    link: /guide/create-pat
+    linkText: Create a Pat
   - icon: ②
     title: Release from GitHub
-    details: Push your Pet, create a v* tag, and let the generated workflow build release artifacts.
+    details: Push your Pat, create a v* tag, and let the generated workflow build release artifacts.
     link: /guide/validate
     linkText: Validate and release
   - icon: ③
@@ -32,13 +32,13 @@ features:
     linkText: Open a pull request
 ---
 
-<div class="step-card"><strong>Important:</strong> the <code>pets</code> repository is an index and contribution hub. Do not hand-edit <code>registry.toml</code> to add a Pet; the registry is populated through the release and maintainer workflow described below.</div>
+<div class="step-card"><strong>Important:</strong> the <code>pats</code> repository is an index and contribution hub. Do not hand-edit <code>registry.toml</code> to add a Pat; the registry is populated through the release and maintainer workflow described below.</div>
 
 ## The complete path
 
 ```mermaid
 flowchart LR
-  A[Create Pet] --> B[Push your repo]
+  A[Create Pat] --> B[Push your repo]
   B --> C[Tag v*]
   C --> D[Auto Build and Release]
   D --> E[Maintainer review]
@@ -52,4 +52,4 @@ Start with [Start here](/guide/start) for prerequisites, or jump directly to the
 - Git and a GitHub account.
 - A working Kirn toolchain.
 - Permission to push to your fork.
-- A Pet with a clear name, README, license, and runnable tests.
+- A Pat with a clear name, README, license, and runnable tests.

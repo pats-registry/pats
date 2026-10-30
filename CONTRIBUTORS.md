@@ -1,6 +1,6 @@
 # Contributors
 
-Thanks to everyone who improves the Pets registry.
+Thanks to everyone who improves the Pats registry.
 
 - [@rkriad585](https://github.com/rkriad585) — creator and current GitHub maintainer
 

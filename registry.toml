@@ -1,18 +1,18 @@
-﻿# registry.toml -- the Pets Registry index (kirn resolves names against this).
+﻿# registry.toml -- the Pats Registry index (kirn resolves names against this).
 #
 # Layout convention (matches the ecosystem plan, section 14.2 of docs/COCO_PLAN.md):
-#   - There are ZERO built-in pets (section 13.1). Editing this file to hardcode a pet
-#     is forbidden; pets are REGISTERED by being pushed to this org as a tagged release,
-#     and `kirn setup` auto-installs the std pets globally (they live at ~/.kirn/pets).
+#   - There are ZERO built-in pats (section 13.1). Editing this file to hardcode a pat
+#     is forbidden; pats are REGISTERED by being pushed to this org as a tagged release,
+#     and `kirn setup` auto-installs the std pats globally (they live at ~/.kirn/pats).
 #   - Name resolution is done by `kirn i <name>` through this registry, OR by
 #     `kirn i <user>/<repo>`, OR by a full third-party URL
 #     [https://]gitlab.com|codeberg.com/<user>/<repo>.
 #
-# Each entry mirrors the metadata `kirn new pets` prompts + the Auto Build & Release
-# workflow template stored in .github/workflows/kirn-pets-release.yml.
+# Each entry mirrors the metadata `kirn new pats` prompts + the Auto Build & Release
+# workflow template stored in .github/workflows/kirn-pats-release.yml.
 
 # Schema (authoritative; kept minimal and stable):
-#   [pets."<name>"]
+#   [pats."<name>"]
 #     repo        = "owner/repo"              # required -- where kirn i <name> resolves
 #     latest      = "v1.0.0"                  # newest tagged release (set by Auto Build & Release)
 #     license     = "MIT"
@@ -20,16 +20,16 @@
 #     website     = "https://..."             # optional
 #     branch      = "main"                    # optional, default main
 #
-# The registry index is populated by the Auto Build & Release workflow when a pets repo
-# under this org publishes a new `v*` tag; it is never hand-edited for pet content.
+# The registry index is populated by the Auto Build & Release workflow when a pats repo
+# under this org publishes a new `v*` tag; it is never hand-edited for pat content.
 
 [registry]
-name        = "Pets Registry"
-org         = "pets-registry"
-org_url     = "https://github.com/pets-registry"
-landing     = "https://pets-registry.github.io"
+name        = "Pats Registry"
+org         = "pats-registry"
+org_url     = "https://github.com/pats-registry"
+landing     = "https://pats-registry.github.io"
 docs        = "https://rkriad585.github.io/kirn"
 branch      = "main"
 
-# --- std pets of the Kirn standard ecosystem (registered on push; none hardcoded) ---
-# (intentionally empty: section 13.1 -- no built-in pets; each std pet is its own repo)
+# --- std pats of the Kirn standard ecosystem (registered on push; none hardcoded) ---
+# (intentionally empty: section 13.1 -- no built-in pats; each std pat is its own repo)

@@ -1,6 +1,6 @@
 ---
 title: After approval
-description: What happens after your Pet or registry pull request is approved.
+description: What happens after your Pat or registry pull request is approved.
 ---
 
 # After approval
@@ -20,22 +20,22 @@ git merge upstream/main
 git push origin main
 ```
 
-## Pet releases
+## Pat releases
 
-For a Pet repository:
+For a Pat repository:
 
 1. Confirm the `v*` tag points to the intended commit.
-2. Open the GitHub Actions run for `kirn-pets-release.yml`.
+2. Open the GitHub Actions run for `kirn-pats-release.yml`.
 3. Confirm the build completes.
 4. Confirm the GitHub release contains the expected artifact.
 5. Share the repository and release URL with maintainers if registration or organization membership is still pending.
 
 ## Install and verify
 
-Consumers can install a registered Pet by name:
+Consumers can install a registered Pat by name:
 
 ```bash
-kirn i my-pet
+kirn i my-pat
 ```
 
 They can also install by owner/repository or a full supported Git URL when appropriate.

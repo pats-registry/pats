@@ -5,7 +5,7 @@ description: Understand what registry.toml means and what must not be edited by 
 
 # Registry rules
 
-The `pets` repository is the name-to-repository index for Kirn package discovery.
+The `pats` repository is the name-to-repository index for Kirn package discovery.
 
 ## What belongs here
 
@@ -16,12 +16,12 @@ The `pets` repository is the name-to-repository index for Kirn package discovery
 
 ## What does not belong here
 
-- Pet source code.
-- A copied release workflow for every Pet.
+- Pat source code.
+- A copied release workflow for every Pat.
 - Secrets or release credentials.
-- Hand-edited Pet entries that bypass the release workflow.
+- Hand-edited Pat entries that bypass the release workflow.
 
-The Pet repository owns its source, tests, metadata, release workflow, and tagged artifacts. The registry resolves names to those repositories and release outputs.
+The Pat repository owns its source, tests, metadata, release workflow, and tagged artifacts. The registry resolves names to those repositories and release outputs.
 
 ## Install forms
 

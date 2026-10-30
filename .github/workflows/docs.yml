@@ -1,4 +1,4 @@
-name: Deploy Pets Registry Docs
+name: Deploy Pats Registry Docs
 
 on:
   push:

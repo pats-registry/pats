@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://pets-registry.github.io/pats-logos/pats-1280x640.png" alt="Pets Registry logo" width="520">
+  <img src="https://pats-registry.github.io/pats-logos/pats-1280x640.png" alt="Pats Registry logo" width="520">
 </p>
 
-<h1 align="center">Pets Registry</h1>
+<h1 align="center">Pats Registry</h1>
 
 <p align="center">The index and contribution hub for reusable packages in the Kirn ecosystem.</p>
 
